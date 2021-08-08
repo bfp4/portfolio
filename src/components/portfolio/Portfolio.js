@@ -9,7 +9,9 @@ export default function Portfolio() {
         <div className="portfolio-container">
             <hr width="1" className="containers-border" />
             <Header>Portfolio</Header>
-            <ProjectCardDisplay />
+            <div className="portfolio-center">
+                <ProjectCardDisplay />
+            </div>
         </div>
     )
 }
