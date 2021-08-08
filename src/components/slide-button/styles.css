@@ -1,0 +1,36 @@
+.slide-button {
+    font-size: 16px;
+    color: hsl(190, 93%, 72%);
+    padding: 14px 16px;
+    border: 3px solid hsl(190, 93%, 72%);
+    border-radius: 24px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: transform 300ms ease-in-out;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.slide-button:hover {
+    color: #FFFFFF;
+}
+
+.slide-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: hsl(190, 93%, 72%);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.slide-button:hover::before {
+    transform: scaleX(1);
+}
