@@ -1,6 +1,9 @@
 import React from 'react'
 import "./styles.css"
 
+import SlideButton from "../slide-button/SlideButton"
+import SkillList from '../skill-list/SkillList'
+
 export default function ProjectCard(props) {
     const { img, title, text } = props
     return (
@@ -11,7 +14,13 @@ export default function ProjectCard(props) {
                 <p className="project-text">{text}</p>
             </div>
             <div className="project-card-back">
-                hello
+                <div>
+                    <div>
+                        <SkillList />
+                    </div>
+                    {/* <img></img> */}
+                </div>
+                <SlideButton>Visit Project</SlideButton>
             </div>
         </div>
     )
