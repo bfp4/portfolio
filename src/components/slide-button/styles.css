@@ -1,8 +1,8 @@
 .slide-button {
     font-size: 16px;
-    color: hsl(190, 93%, 72%);
+    color: #61DBFB;
     padding: 14px 16px;
-    border: 3px solid hsl(190, 93%, 72%);
+    border: 3px solid #61DBFB;
     border-radius: 24px;
     cursor: pointer;
     position: relative;
@@ -10,7 +10,7 @@
     overflow: hidden;
     transition: transform 300ms ease-in-out;
     font-weight: bold;
-    background-color: #FFFFFF;
+    background: none;
 }
 
 .slide-button:hover {
@@ -24,7 +24,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: hsl(190, 93%, 72%);
+    background-color: #61DBFB;
     z-index: -1;
     transform: scaleX(0);
     transform-origin: left;

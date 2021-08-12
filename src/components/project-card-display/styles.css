@@ -6,3 +6,9 @@
     grid-template-rows: 1fr 1fr;
     gap: 25px;
 }
+
+@media (max-width: 800px){
+    .project-card-display {
+        grid-template-columns: 300px;
+    }
+}

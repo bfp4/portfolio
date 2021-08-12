@@ -10,7 +10,7 @@ export default function SkillBox(props) {
     }
 
     return (
-        <a href={link} style={styles} className="skill-box-container">
+        <a href={link} target="_blank" rel="noreferrer" style={styles} className="skill-box-container">
             {title}
             <img src={logo} alt="logo" style={{height: "21px"}}/>
         </a>

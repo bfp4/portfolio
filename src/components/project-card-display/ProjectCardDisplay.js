@@ -19,23 +19,23 @@ export default function ProjectCardDisplay() {
             text: "This is an app that shows the daily hayom yom (Hassidic teaching).",
             logo: "images/logos/hayom-yom.png",
             link: "https://play.google.com/store/apps/details?id=com.levertron.hayomyomapp",
-            skills: ["React", "React Native", "Puppeteer",]
+            skills: ["React Native", "Puppeteer",]
         },
         {
-            image: "images/dummy.png",
-            title: "Dummy",
-            text: "This is a Dummy project.",
-            logo: "images/logo.png",
-            link: "https://sneakerniche.com/",
-            skills: ["React", "Firebase"]
+            image: "images/screenshots/youtube.png",
+            title: "Youtube Browse Blocker",
+            text: "This is a chrome extension that hides your youtube feed so that you won't be distracted by random videos.",
+            logo: "images/logos/youtube.jpg",
+            link: "https://chrome.google.com/webstore/detail/youtube-browse-blocker/fdijgodcmpglkoceocpboadcfbgecgpe?hl=en",
+            skills: ["JavaScript", "CSS"]
         },
         {
-            image: "images/dummy.png",
-            title: "Dummy",
-            text: "This is a Dummy project.",
-            logo: "images/logo.png",
-            link: "https://sneakerniche.com/",
-            skills: ["React", "Firebase"]
+            image: "images/screenshots/bakedeco.png",
+            title: "Bakedeco",
+            text: "I did some freelance projects for Bakedeco. This is their gift card web page I created.",
+            logo: "images/logos/bakedeco.png",
+            link: "https://www.bakedeco.com/nav/gift_certificates1.asp",
+            skills: ["HTML5", "CSS", "JavaScript"]
         }
     ]
     return (
