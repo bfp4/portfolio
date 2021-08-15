@@ -1,9 +1,12 @@
 import React from 'react'
 import "./styles.css"
+import { useTheContext } from '../../App'
 
 import SkillList from "../skill-list/SkillList"
 
-export default function Description(props) {
+export default function Description() {
+    const { setModal } = useTheContext()
+    
     return (
         <div>
             <div className="description-container">
@@ -17,7 +20,7 @@ export default function Description(props) {
                 </div>
             </div>
             <div className="contact-button-container">
-                <button className="contact-button" onClick={() => props.setModal(prev => !prev)}>Contact Me</button>
+                <button className="contact-button" onClick={() => setModal(prev => !prev)}>Contact Me</button>
             </div>
         </div>
     )

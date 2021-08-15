@@ -1,14 +1,25 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./styles.css"
+import { useTheContext } from '../../App'
 
 import SlideButton from "../slide-button/SlideButton"
 import SkillList from '../skill-list/SkillList'
 
 export default function ProjectCard(props) {
+    const projectContentRef = useRef()
+    const { isTouch } = useTheContext()
     const { img, title, text, logo, link, skills } = props
+
+    const handleClick = () => {
+        if(isTouch()) {
+            if(projectContentRef.current.style.transform === "rotateY(180deg)") projectContentRef.current.style.transform = "rotateY(0deg)"
+            else projectContentRef.current.style.transform = "rotateY(180deg)"
+        }else projectContentRef.current.style.transform = null
+    }
+
     return (
-        <div className="project-card-container">
-            <div className="project-card-content">
+        <div className="project-card-container" onClick={handleClick}>
+            <div className="project-card-content" ref={projectContentRef}>
                 <div className="project-card-front">
                     <h3 className="project-title">{title}</h3>
                     <div className="project-image-container">

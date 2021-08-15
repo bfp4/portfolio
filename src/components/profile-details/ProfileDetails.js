@@ -22,9 +22,7 @@ export default function ProfileDetails() {
                     </a>
                 </div>
             </div>
-            <div className="profile-pic-container">
-                <img src="images/profile-pic.jpg" alt="profile-pic" className="profile-pic" />
-            </div>
+            <img src="images/profile-pic.jpg" alt="profile-pic" className="profile-pic" />
         </div>
     )
 }

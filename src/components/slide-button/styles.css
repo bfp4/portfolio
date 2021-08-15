@@ -13,10 +13,6 @@
     background: none;
 }
 
-.slide-button:hover {
-    color: #FFFFFF;
-}
-
 .slide-button::before {
     content: '';
     position: absolute;
@@ -31,6 +27,19 @@
     transition: transform 300ms cubic-bezier(0.3, 1, 0.8, 1);
 }
 
-.slide-button:hover::before {
-    transform: scaleX(1);
+@media (hover: hover){
+    .slide-button:hover {
+        color: #FFFFFF;
+    }
+
+    .slide-button:hover::before {
+        transform: scaleX(1);
+    }
+}
+
+@media (hover: none){
+    .slide-button {
+        color: #FFFFFF;
+        background: #61DBFB;
+    }
 }

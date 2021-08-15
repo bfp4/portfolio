@@ -1,18 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./styles.css"
+import { useTheContext } from '../../App'
 
 import Portfolio from '../portfolio/Portfolio'
 import AboutMe from '../about-me/AboutMe'
 import ContactModal from '../contact-modal/ContactModal'
 
 export default function ProfileContent() {
-    const [modal, setModal] = useState(false)
+    const { modal } = useTheContext()
 
     return (
         <div className="profile-content-container">
             <Portfolio />
-            <AboutMe setModal={setModal} />
-            {modal && <ContactModal setModal={setModal} />}
+            <AboutMe />
+            {modal && <ContactModal/>}
         </div>
     )
 }

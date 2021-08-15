@@ -9,6 +9,8 @@
     transition: transform 150ms ease-out;
 }
 
-.skill-box-container:hover {
-    transform: scale(1.25, 1.25);
+@media (hover: hover){
+    .skill-box-container:hover {
+        transform: scale(1.25, 1.25);
+    }
 }

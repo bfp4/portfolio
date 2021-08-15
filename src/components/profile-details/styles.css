@@ -28,10 +28,6 @@ a {
     transition: color 300ms ease-out;
 }
 
-a:hover {
-    color: #61DBFB
-}
-
 .social-links-container a:first-of-type {
     margin-left: 0;
 }
@@ -40,15 +36,15 @@ a i {
     font-size: 30px;
 }
 
-.profile-pic-container {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-}
-
 .profile-pic {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+@media (hover: hover){
+    .social-links-container a:hover {
+        color: #61DBFB
+    }
 }

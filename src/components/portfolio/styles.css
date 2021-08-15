@@ -1,6 +1,5 @@
 .portfolio-container {
     flex: 1.5;
-    height: 100%;
     position: relative;
     margin: 0 40px;
 }
@@ -20,7 +19,15 @@
 }
 
 @media (max-width: 1200px){
+    .portfolio-container {
+        margin: 0;
+    }
+
     .containers-border {
         display: none;
+    }
+
+    .portfolio-center {
+        height: auto
     }
 }
