@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import emailjs from "emailjs-com"
 import "./styles.css"
 import { useTheContext } from '../../App' 
+const { REACT_APP_GMAIL_ID } = process.env 
 
 export default function ContactModal() {
     const { setModal } = useTheContext()
@@ -11,7 +12,7 @@ export default function ContactModal() {
 
     const handleSubmit = e => {
         e.preventDefault()
-        emailjs.sendForm('gmail', 'portfolio_template', e.target, 'user_Tt7nufyvnUYwzxSRbXwb2')
+        emailjs.sendForm('gmail', 'portfolio_template', e.target, REACT_APP_GMAIL_ID)
         .then((result) => {
             console.log(result.text);
         }, (error) => {

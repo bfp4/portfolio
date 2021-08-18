@@ -3,3 +3,22 @@
     height: 100%;
     margin: 0 10px;
 }
+
+.about-me-top-hr-container {
+    height: 23px;
+    display: none;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about-me-top-hr {
+    height: 1px;
+    background-color: #000;
+    width: 80%;
+}
+
+@media (max-width: 1200px){
+    .about-me-top-hr-container {
+        display: flex;
+    }
+}

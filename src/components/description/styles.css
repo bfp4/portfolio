@@ -17,7 +17,6 @@
     width: 200px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
 }
 
 .contact-button-container {
@@ -40,4 +39,19 @@
     padding: 10px 0;
     cursor: pointer;
     margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
+    .description-container {
+        flex-direction: column;
+    }
+
+    .description-container p {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .skill-list-holder {
+        width: 100%;
+    }
 }

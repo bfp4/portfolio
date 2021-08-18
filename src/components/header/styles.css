@@ -3,3 +3,9 @@
     font-size: 56px;
     font-weight: 300;
 }
+
+@media (max-width: 600px){
+    .header {
+        text-align: center;
+    }
+}
