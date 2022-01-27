@@ -14,9 +14,6 @@ export default function ProfileDetails() {
                     <a href="https://www.instagram.com/bfp_is_not_available/" target="_blank" rel="noreferrer">
                         <i className="fab fa-instagram"></i>
                     </a>
-                    <a href="https://github.com/bfp4" target="_blank" rel="noreferrer">
-                        <i className="fab fa-linkedin-in"></i>
-                    </a>
                     <a href="https://anchor.fm/ari-leverton" target="_blank" rel="noreferrer">
                         <i className="fas fa-podcast"></i>
                     </a>

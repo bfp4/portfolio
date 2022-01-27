@@ -38,7 +38,7 @@ export default function SkillList(props) {
             color: "#FFFFFF",
             backgroundColor: "#313033",
             link: "https://github.com/puppeteer/puppeteer",
-            logo: "images/skills/Puppeteer.png",
+            logo: "images/skills/puppeteer.png",
         },
         {
             title: "Firebase",

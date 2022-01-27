@@ -10,7 +10,7 @@ export default function ProjectCardDisplay() {
             title: "SneakerNiche",
             text: "This is a website that web scrapes popular sneaker websites to find the best deals.",
             logo: "images/logos/sneakerniche.png",
-            link: "https://sneakerniche.com/",
+            link: " https://sneaker-dea.web.app/",
             skills: ["React", "Firebase", "Puppeteer"]
         },
         {
@@ -34,7 +34,7 @@ export default function ProjectCardDisplay() {
             title: "Bakedeco",
             text: "I did some freelance projects for Bakedeco. This is their gift card web page I created.",
             logo: "images/logos/bakedeco.png",
-            link: "https://www.bakedeco.com/nav/gift_certificates1.asp",
+            link: "https://www.bakedeco.com/nav/gift_certificates.asp",
             skills: ["HTML5", "CSS", "JavaScript"]
         }
     ]
