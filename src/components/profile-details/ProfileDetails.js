@@ -11,15 +11,15 @@ export default function ProfileDetails() {
                     <a href="https://github.com/bfp4" target="_blank" rel="noreferrer">
                         <i className="fab fa-github"></i>
                     </a>
-                    <a href="https://www.instagram.com/bfp_is_not_available/" target="_blank" rel="noreferrer">
-                        <i className="fab fa-instagram"></i>
+                    <a href="https://www.linkedin.com/in/ari-leverton-33a522209/" target="_blank" rel="noreferrer">
+                        <i className="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://anchor.fm/ari-leverton" target="_blank" rel="noreferrer">
+                    {/* <a href="https://anchor.fm/ari-leverton" target="_blank" rel="noreferrer">
                         <i className="fas fa-podcast"></i>
-                    </a>
+                    </a> */}
                 </div>
             </div>
-            <img src="images/profile-pic.jpg" alt="profile-pic" className="profile-pic" />
+            <img src="images/profile-pic.png" alt="profile-pic" className="profile-pic" />
         </div>
     )
 }

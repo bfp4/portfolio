@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import emailjs from "emailjs-com"
 import "./styles.css"
 import { useTheContext } from '../../App' 
@@ -6,9 +6,6 @@ const { REACT_APP_GMAIL_ID } = process.env
 
 export default function ContactModal() {
     const { setModal } = useTheContext()
-    // const [name, setName] = useState("")
-    // const [email, setEmail] = useState("")
-    // const [message, setMessage] = useState("")
 
     const handleSubmit = e => {
         e.preventDefault()
@@ -32,8 +29,6 @@ export default function ContactModal() {
                         className="contact-input" 
                         placeholder="Full Name" 
                         name="name" 
-                        // value={name} 
-                        // onChange={e => setName(e.target.value)} 
                     />
                     <input 
                         
@@ -41,16 +36,12 @@ export default function ContactModal() {
                         className="contact-input" 
                         placeholder="Email" 
                         name="email"
-                        // value={email} 
-                        // onChange={e => setEmail(e.target.value)} 
                     />
                 </div>
                 <textarea 
                     rows="7" 
                     placeholder="Hey Ari," 
                     name="message" 
-                    // value={message} 
-                    // onChange={e => setMessage(e.target.value)} 
                 />
                 <button type="submit" className="contact-button">Send</button>
             </form>

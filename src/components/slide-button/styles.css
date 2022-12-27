@@ -2,7 +2,6 @@
     font-size: 16px;
     color: #61DBFB;
     padding: 14px 16px;
-    border: 3px solid #61DBFB;
     border-radius: 24px;
     cursor: pointer;
     position: relative;
@@ -11,6 +10,7 @@
     transition: transform 300ms ease-in-out;
     font-weight: bold;
     background: none;
+    border: 3px solid #61DBFB;
 }
 
 .slide-button::before {
